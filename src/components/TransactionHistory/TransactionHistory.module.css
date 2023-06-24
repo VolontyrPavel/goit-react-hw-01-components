@@ -1,0 +1,21 @@
+.transactionHistory {
+    min-width: 600px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 
+    0px 1px 6px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px rgba(46, 47, 66, 0.16), 
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
+
+thead {
+    background-color: aqua;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #2a2a2a;
+}
