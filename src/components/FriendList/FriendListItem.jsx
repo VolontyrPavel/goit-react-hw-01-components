@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import css from './FriendList.module.css';
 import { VscCircleLargeFilled } from "react-icons/vsc";
 
-export const CreateFriendsMarkup = ({ name, avatar, isOnline }) => {
+export const FriendListItem = ({ name, avatar, isOnline }) => {
     return (
         <li className={css.item}>
             <span className={isOnline ? css.online : css.offline}><VscCircleLargeFilled /></span>
@@ -13,7 +13,7 @@ export const CreateFriendsMarkup = ({ name, avatar, isOnline }) => {
 }
 
 
-CreateFriendsMarkup.propTypes = {
+FriendListItem.propTypes = {
     name: PropTypes.string.isRequired,
     avatar: PropTypes.string.isRequired,
     isOnline: PropTypes.bool.isRequired,

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-export const CreateTransactionHistoryMarkup = ({ type, amount, currency }) => {
+export const TransactionHistoryItem  = ({ type, amount, currency }) => {
     return (
         <tr>
           <td>{type}</td>
@@ -10,7 +10,7 @@ export const CreateTransactionHistoryMarkup = ({ type, amount, currency }) => {
     )
 }
 
-CreateTransactionHistoryMarkup.propTypes = {
+TransactionHistoryItem.propTypes = {
     type: PropTypes.string.isRequired,
     amount: PropTypes.string.isRequired,
     currency: PropTypes.string.isRequired,

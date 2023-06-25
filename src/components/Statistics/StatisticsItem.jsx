@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import css from './Statistics.module.css';
 
-export const CreateStatisticsMarkup = ( { label, percentage }) => {
+export const StatisticsItem = ( { label, percentage }) => {
     return (
         <li className={css.item}>
             <span className={css.label}>{label}</span>
@@ -10,7 +10,7 @@ export const CreateStatisticsMarkup = ( { label, percentage }) => {
     )
 }
 
-CreateStatisticsMarkup.propTypes = {
+StatisticsItem.propTypes = {
     label: PropTypes.string.isRequired,
     percentage: PropTypes.number.isRequired,
 }
